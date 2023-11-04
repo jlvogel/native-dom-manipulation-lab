@@ -17,15 +17,18 @@ document.addEventListener("DOMContentLoaded", function(event) {
   // Do all of your work inside the document.addEventListener  
 
   // Part 1
-
+document.querySelector('#main-title').textContent = "Part 1 complete"
 
   // Part 2
-
+document.querySelector('body').style.background = 'lightblue'
 
   // Part 3
-
+// const ul = document.querySelector('#favorite-things')
+// ul.removeChild(ul.lastElementChild)
+document.querySelector('#favorite-things').removeChild(document.querySelector('#favorite-things').children[5])
 
   // Part 4
+  
 
 
   // Part 5
