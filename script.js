@@ -75,8 +75,28 @@ pastRacesUl.appendChild(li)
 
 
   // Part 9
+  // Select all .blog-postclass elements. Iterate through the list of .blog-postclass elements and apply two event handlers to each node. The first event handler should be listening for mouseoutevents while the second handler should be listening for mouseenterevents.
+  
+  // The mouseouthandler should toggle the class .purple
+  // The mouseenterhandler should toggle the class .red
+  // Test it out!
+  
+  // Hint:
+  
+  // Remember the document node property .classListand the document node method .toggle().
 
+  for (child of document.querySelectorAll('.blog-post')) {
+    child.addEventListener('mouseout', handleMouseout)
+    child.addEventListener('mouseenter', handleMouseenter)
+  }
 
+  function handleMouseout(evt) {
+    evt.target.classList.toggle('purple')
+  }
+  
+  function handleMouseenter(evt) {
+    evt.target.classList.toggle('red')
+  }
 
 
 });
