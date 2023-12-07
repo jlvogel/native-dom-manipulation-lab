@@ -35,8 +35,13 @@ for (element of document.querySelectorAll('.special-title')) {
 }
 
   // Part 5
-
-
+  // Turns out DOM never raced in Chicago. Access the Past Races list and remove Chicago.
+  const pastRacesUl = document.querySelector('#past-races')
+ for (child of pastRacesUl.children) {
+  if (child.innerText == 'Chicago') {
+    pastRacesUl.removeChild(child)
+  }
+ }
   // Part 6
 
 
