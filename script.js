@@ -23,13 +23,16 @@ document.querySelector('#main-title').textContent = "Part 1 complete"
 document.querySelector('body').style.background = 'lightblue'
 
   // Part 3
-// const ul = document.querySelector('#favorite-things')
-// ul.removeChild(ul.lastElementChild)
-document.querySelector('#favorite-things').removeChild(document.querySelector('#favorite-things').children[5])
+const ul = document.querySelector('#favorite-things')
+ul.removeChild(ul.lastElementChild)
+// document.querySelector('#favorite-things').removeChild(document.querySelector('#favorite-things').children[5])
 
   // Part 4
-  
+  // Select all .special-title class elements and change their font-size to 2rem. Remember you might have to iterate through the list of elements
 
+for (element of document.querySelectorAll('.special-title')) {
+  element.style.fontSize = '2rem'
+}
 
   // Part 5
 
