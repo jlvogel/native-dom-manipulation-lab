@@ -36,14 +36,19 @@ for (element of document.querySelectorAll('.special-title')) {
 
   // Part 5
   // Turns out DOM never raced in Chicago. Access the Past Races list and remove Chicago.
+
   const pastRacesUl = document.querySelector('#past-races')
  for (child of pastRacesUl.children) {
   if (child.innerText == 'Chicago') {
     pastRacesUl.removeChild(child)
   }
  }
-  // Part 6
 
+  // Part 6
+// Let's add to DOM's Past Races list. Create a new <li>element, change the new <li>text to the name of a city, and append it to the Past Races list.
+const li = document.createElement('li')
+li.innerText = "New York City"
+pastRacesUl.appendChild(li)
 
   // Part 7
 
